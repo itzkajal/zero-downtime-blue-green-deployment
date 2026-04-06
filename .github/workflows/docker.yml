@@ -1,0 +1,22 @@
+  GNU nano 7.2                                                                                             .github/workflows/docker.yml                                                                             name: Docker CI
+
+on:
+  push:
+    branches: [ main ]
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+    - name: Checkout code
+      uses: actions/checkout@v3
+
+    - name: Build Docker image
+      run: docker build -t my-nginx .
+
+    - name: List files
+      run: ls -l
+
+
+
