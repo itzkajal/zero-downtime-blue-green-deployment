@@ -36,6 +36,3 @@ Run Jenkins pipeline
 
 Traffic switches automatically
 
-## Resume Line
-
-Implemented zero-downtime Blue-Green deployment using Docker, Jenkins, Nginx, and Terraform.
